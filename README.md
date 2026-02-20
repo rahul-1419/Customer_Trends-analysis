@@ -4,7 +4,7 @@ This project represents a complete, industry standard, end-to-end data analytics
 
 This project is perfect for:
 
-📊 Data Analyst aspirants who want to build a strong Portfolio Project for interviews and LinkedIn
+📊 Data Analyst aspirants who want to build a strong Portfolio Project for interviews and LinkedIn. /n
 📚 Anyone learning Python, SQL, and Power BI
 💼 Professionals preparing for interviews in Data Analytics, Data Science or Product Analytics roles
 
@@ -21,4 +21,3 @@ The goal of this project is to simulate a corporate-grade end-to-end data analyt
 ✅ Report and Presentation: Write a clear project report summarizing your key findings and business recommendations. Prepare a presentation that visually communicates insights and actionable recommendations to stakeholders.
 
 ![alt text](image.png)
-
