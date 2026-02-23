@@ -1,39 +1,87 @@
-# 🛒 Customer Trends & Behavior Analysis
+# 🛍️ Customer Shopping Behavior Analysis
 
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python&logoColor=white)
-![Data Analysis](https://img.shields.io/badge/Data%20Analysis-Pandas%20%7C%20NumPy-orange)
-![Visualization](https://img.shields.io/badge/Visualization-Matplotlib%20%7C%20Seaborn-green)
-![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?logo=jupyter&logoColor=white)
+## 📌 Project Overview
+This project analyzes customer shopping behavior using transactional data from 3,900 purchases across multiple product categories.  
+The objective is to uncover insights into spending patterns, customer segmentation, product preferences, subscription behavior, and revenue contribution to support business decision-making.
 
-## 📝 Project Overview
-Understanding customer behavior is the key to any successful business. This project involves a deep-dive **Exploratory Data Analysis (EDA)** to uncover meaningful insights into customer trends, purchasing habits, and engagement levels. By analyzing this dataset, the goal is to identify patterns that can help businesses optimize their marketing strategies, improve customer retention, and boost overall sales.
+---
 
-## 🎯 Key Business Questions Answered
-Through this analysis, we aim to uncover insights related to:
-- **Purchasing Patterns:** What times of the year/month/week see the highest sales volume?
-- **Customer Segmentation:** Who are the most valuable customers? (Applying RFM - Recency, Frequency, Monetary analysis).
-- **Demographic Impact:** How do age, location, and income affect spending habits?
-- **Product Popularity:** Which products or categories are most frequently bought together?
-- **Churn Analysis:** Can we identify trends among customers who stopped purchasing?
+## 📊 Dataset Summary
+- **Total Records:** 3,900
+- **Total Columns:** 18
+- **Key Features:**
+  - Customer Demographics (Age, Gender, Location, Subscription Status)
+  - Purchase Details (Item Purchased, Category, Purchase Amount, Season)
+  - Shopping Behavior (Discount Applied, Previous Purchases, Review Rating, Shipping Type)
 
-## 🛠️ Tech Stack & Tools
-- **Programming Language:** Python
-- **IDE:** Jupyter Notebook / VS Code
-- **Libraries Used:**
-  - `Pandas` & `NumPy`: For data cleaning, transformation, and aggregation.
-  - `Matplotlib` & `Seaborn`: For designing intuitive and informative statistical graphs.
-  - `Scikit-Learn`: (If applicable) For clustering customers (e.g., K-Means).
+---
 
-## 📊 Key Insights & Findings
-*(✏️ Note: Update these bullet points with the actual insights from your dataset!)*
-1. **Peak Engagement:** The majority of purchases occur during weekends and holiday seasons, indicating a need for targeted weekend promotions.
-2. **Customer Segments:** Using RFM analysis, we identified that the top **20% of customers** contribute to over **60% of total revenue**.
-3. **Demographic Focus:** Customers in the **25-40 age bracket** represent the highest spending demographic.
-4. **Retention vs. Acquisition:** Returning customers spend on average 30% more per transaction than new customers, highlighting the importance of loyalty programs.
+## 🧹 Data Cleaning & Preparation (Python)
+- Loaded dataset using **Pandas**
+- Handled 37 missing values in `review_rating` using median imputation
+- Standardized column names (snake_case)
+- Created new features:
+  - `age_group`
+  - `purchase_frequency_days`
+- Removed redundant columns
+- Loaded cleaned data into **PostgreSQL**
 
-## 🚀 How to Run the Project Locally
+---
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/rahul-1419/Customer_Trends-analysis.git
-   cd Customer_Trends-analysis
+## 🛠 SQL Business Analysis
+
+### 🔹 Key Business Questions Solved:
+
+1. Revenue comparison by Gender
+2. High-spending customers using discounts
+3. Top 5 highest-rated products
+4. Standard vs Express shipping spending comparison
+5. Subscribers vs Non-subscribers revenue analysis
+6. Products most dependent on discounts
+7. Customer segmentation (New, Returning, Loyal)
+8. Top 3 products per category
+9. Repeat buyers vs subscription behavior
+10. Revenue contribution by age group
+
+---
+
+## 📈 Key Insights
+
+- Male customers generated significantly higher revenue than female customers.
+- Express shipping customers spent slightly more on average.
+- Loyal customers form the largest segment.
+- Young Adults contributed the highest revenue among age groups.
+- Non-subscribers generated more total revenue than subscribers.
+- Some products (like Hats & Sneakers) heavily depend on discounts.
+
+---
+
+## 📊 Power BI Dashboard
+Built an interactive dashboard including:
+- Revenue by Category
+- Revenue by Age Group
+- Subscription Status Distribution
+- Average Purchase Amount
+- Average Review Rating
+
+---
+
+## 🧠 Business Recommendations
+
+- Promote exclusive benefits to increase subscriptions
+- Implement loyalty reward programs
+- Re-evaluate discount-heavy product strategy
+- Focus marketing on high-revenue age groups
+
+---
+
+## 💻 Tech Stack
+- Python (Pandas, NumPy)
+- PostgreSQL
+- SQL (Advanced Queries, Window Functions, CTEs)
+- Power BI
+
+---
+
+## 📎 Project Type
+End-to-End Data Analytics Project (Data Cleaning → SQL Analysis → Dashboard → Business Recommendations)
